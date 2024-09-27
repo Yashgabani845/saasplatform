@@ -1,0 +1,97 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4e9ff5;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+    color: #4e9ff5;
+}
+
+.navbar-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+.cta-button {
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    border: 2px solid #4e9ff5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #4e9ff5;
+    transition: all 0.3s ease;
+}
+
+.signup-button {
+    background-color: #4e9ff5;
+    color: #fff;
+}
+
+.cta-button:hover {
+    background-color: #4e9ff5;
+    color: #fff;
+}
+
+.signup-button:hover {
+    background-color: #fff;
+    color: #4e9ff5;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .navbar-links {
+        display: none; /* Hide links for mobile */
+    }
+
+    .navbar-logo a {
+        font-size: 1.5rem;
+    }
+
+    .navbar-cta {
+        gap: 0.5rem;
+    }
+}
