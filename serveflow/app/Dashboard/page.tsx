@@ -1,6 +1,6 @@
 import "../Dashboard/style.css";
 import Navbar from "../@Navbar/page";
-
+import Footer from "../@Footer/page";
 const Dashboard = () => {
     return (
         <>
@@ -25,6 +25,7 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </>
     );
 };
